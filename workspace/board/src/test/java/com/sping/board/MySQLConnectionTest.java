@@ -43,12 +43,12 @@ public class MySQLConnectionTest {
 				String boardContent = rs.getString("BOARD_CONTENT");
 				String boardWriter = rs.getString("BOARD_WRITER");
 				
-				System.out.print("boardSubject : " + boardSubject + ", ");
-				System.out.print("boardContent: " + boardContent + ", ");
-				System.out.println("boardWriter: " + boardWriter);
-				 logger.info("boardSubject : {}", boardSubject);
+				logger.info("boardSubject : {}", boardSubject);
+				logger.info("boardContent: {}", boardContent);
+				logger.info("boardWriter: {}", boardWriter);
+				
+				logger.info("========================================");
 			}
-
 			rs.close();
 			stmt.close();
 			conn.close();
